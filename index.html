@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation | Rizky & Sriyani</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#100e0b;color:#f5ead1;font-family:Poppins,sans-serif}
+.cover{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 20px;background:linear-gradient(#100e0bc9,#100e0be8),url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1200') center/cover}
+.frame{border:1px solid #b99a55;padding:48px 25px;max-width:470px;width:100%;position:relative}
+.small{font-size:11px;letter-spacing:4px;color:#d9bd7a}
+h1{font-family:'Cormorant Garamond',serif;font-size:55px;font-weight:500;line-height:1.1;margin:25px 0;color:#e8ce91}
+.amp{font-size:30px;color:#b99a55}
+button,.btn{background:#b99a55;color:#17130c;border:0;padding:13px 25px;text-decoration:none;display:inline-block;font-family:inherit;font-size:12px;letter-spacing:1px;cursor:pointer;margin-top:25px}
+main{display:none}
+section{padding:75px 22px;text-align:center;max-width:850px;margin:auto}
+h2{font-family:'Cormorant Garamond',serif;font-size:39px;color:#e8ce91;font-weight:500;margin:15px 0}
+p{font-size:13px;line-height:2;color:#d4c9b3}
+.line{width:65px;height:1px;background:#b99a55;margin:20px auto}
+.names{font-family:'Cormorant Garamond',serif;font-size:37px;color:#e8ce91;margin:12px 0}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:30px}
+.photos img{width:100%;height:290px;object-fit:cover;border:1px solid #9e8047}
+.card{border:1px solid #78633b;padding:30px 18px;margin-top:25px}
+.date{font-family:'Cormorant Garamond',serif;font-size:30px;color:#e8ce91;margin:15px}
+.map{color:#e8ce91;text-decoration:underline}
+footer{padding:35px;text-align:center;border-top:1px solid #78633b;color:#b99a55;font-size:11px}
+@media(max-width:500px){h1{font-size:46px}.photos img{height:210px}.names{font-size:29px}}
+</style>
+</head>
+<body>
+
+<div class="cover" id="cover">
+ <div class="frame">
+  <div class="small">THE WEDDING OF</div>
+  <h1>M. Rizky<br><span class="amp">&</span><br>Sriyani</h1>
+  <div class="line"></div>
+  <p>Minggu, 22 November 2026</p>
+  <p style="margin-top:20px">Kepada Yth.</p>
+  <p>Bapak/Ibu/Saudara/i</p>
+  <button onclick="openInvitation()">BUKA UNDANGAN</button>
+ </div>
+</div>
+
+<main id="content">
+<section>
+ <div class="small">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+ <h2>Assalamu’alaikum<br>Warahmatullahi Wabarakatuh</h2>
+ <div class="line"></div>
+ <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+ <div class="photos">
+  <div>
+   <img src="https://placehold.co/500x650/242018/e8ce91?text=Foto+Mempelai+Pria" alt="Foto Mempelai Pria">
+   <div class="names">M. Rizky<br>Maulasyam</div>
+   <p>Mempelai Pria</p>
+  </div>
+  <div>
+   <img src="https://placehold.co/500x650/242018/e8ce91?text=Foto+Mempelai+Wanita" alt="Foto Mempelai Wanita">
+   <div class="names">Sriyani</div>
+   <p>Mempelai Wanita</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="small">SAVE THE DATE</div>
+ <h2>Hari Bahagia Kami</h2>
+ <div class="line"></div>
+ <div class="card">
+  <div class="date">Minggu, 22 November 2026</div>
+  <p>PUKUL 08.00 WIB – S/D SELESAI</p>
+ </div>
+</section>
+
+<section>
+ <div class="small">WEDDING LOCATION</div>
+ <h2>Lokasi Acara</h2>
+ <div class="line"></div>
+ <div class="card">
+  <p>Kp. Lebak RT.06/RW.02</p>
+  <p>Desa Karet, Kec. Sepatan</p>
+  <p>Kab. Tangerang, Banten</p>
+  <a class="btn" href="https://maps.app.goo.gl/jcXcMiz8vBm3CWRk9" target="_blank">BUKA GOOGLE MAPS</a>
+ </div>
+</section>
+
+<section>
+ <h2>Merupakan Suatu Kehormatan</h2>
+ <p>Apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.</p>
+ <div class="line"></div>
+ <h2>Terima Kasih</h2>
+ <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+ <div class="names">Rizky & Sriyani</div>
+</section>
+<footer>MADE WITH LOVE • WEDDING INVITATION</footer>
+</main>
+
+<script>
+function openInvitation(){
+ document.getElementById('cover').style.display='none';
+ document.getElementById('content').style.display='block';
+ window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
